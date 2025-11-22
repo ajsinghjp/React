@@ -60,6 +60,15 @@ const myelement = (
 
    const moCarInfo = new Model("Ford", "Mustang");
 
+function dateInfo(dat) {
+  const d = dat.getDate();
+  const m = dat.getMonth() + 1;
+  const y = dat.getFullYear();
+
+  return [d, m, y];
+}
+
+const [date, month, year] = dateInfo(new Date());
 
 createRoot(document.getElementById('ajay')!).render(
  //myCar.present()
@@ -67,5 +76,6 @@ createRoot(document.getElementById('ajay')!).render(
  //add2NumbersF1()  
  //add2NumbersF2()  
  //add2NumbersF3(20, 30)  
- add2NumbersF4(50, 70)
+ //add2NumbersF4(50, 70)
+  dateInfo(new Date())
 ) 
