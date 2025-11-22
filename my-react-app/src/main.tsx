@@ -77,5 +77,5 @@ createRoot(document.getElementById('ajay')!).render(
  //add2NumbersF2()  
  //add2NumbersF3(20, 30)  
  //add2NumbersF4(50, 70)
-  dateInfo(new Date())
+  year
 ) 
